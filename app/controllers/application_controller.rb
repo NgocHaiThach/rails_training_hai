@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
-    def home
-    end
+    # def home
+    # end
+    include SessionsHelper
 end
