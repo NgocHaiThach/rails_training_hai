@@ -39,6 +39,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_storage_validations (0.9.8)
+      activejob (>= 5.2.0)
+      activemodel (>= 5.2.0)
+      activestorage (>= 5.2.0)
+      activesupport (>= 5.2.0)
     activejob (6.1.7)
       activesupport (= 6.1.7)
       globalid (>= 0.3.6)
@@ -90,6 +95,8 @@ GEM
     crass (1.0.6)
     erubi (1.11.0)
     execjs (2.8.1)
+    faker (2.23.0)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -237,12 +244,14 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
+  active_storage_validations (~> 0.9.8)
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   bootstrap-sass (~> 3.4.1)
   bootstrap-will_paginate (~> 1.0.0)
   byebug
   capybara (>= 3.26)
+  faker (~> 2.23.0)
   jbuilder (~> 2.7)
   listen (~> 3.3)
   puma (~> 5.0)
