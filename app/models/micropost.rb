@@ -13,4 +13,10 @@ class Micropost < ApplicationRecord
                                               messages: "must be a valid image format"},
             size: {less_than: 5.megabytes, 
                     messages: "should be less than 5MB"}
+
+  #actions
+  def display_image
+    image.variant(resize_to_limit: [145, 145])
+  end
+
 end

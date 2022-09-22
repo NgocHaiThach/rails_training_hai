@@ -12,6 +12,8 @@ gem 'rubocop'
 gem 'will_paginate', '~> 3.3.1'
 gem 'faker', '~> 2.23.0'
 gem 'active_storage_validations', '~> 0.9.8'
+gem 'image_processing',           '~> 1.12.2'
+ gem 'mini_magick', '4.11.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
